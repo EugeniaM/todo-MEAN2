@@ -1,0 +1,16 @@
+<div class="tasks-container">
+	<div *ngFor="let task of project.tasks | orderBy: 'priority'" class="single-task-container">
+		<div class="task-status">
+			<span><input type="checkbox" [(ngModel)]="task.status" name="status" (ngModelChange)="changeStatus(project, task)"/></span>
+		</div>
+		<div class="task-body">{{task.body}}</div>
+		<div class="task-options">
+			<span class="task-priority-change">
+        <span class="glyphicon glyphicon-triangle-top" (click)="prioritizeUp(project, task)"></span>
+        <span class="glyphicon glyphicon-triangle-bottom" (click)="prioritizeDown(project, task)"></span>
+      </span>|
+      <span class="glyphicon glyphicon-pencil" (click)="goToEditTaskPage(project, task)"></span>|
+      <span class="glyphicon glyphicon-trash" (click)="removeTask(project, task)"></span>
+		</div>
+	</div>
+</div>

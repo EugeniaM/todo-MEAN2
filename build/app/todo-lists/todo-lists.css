@@ -1,0 +1,26 @@
+.add-new-project {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.add-new-project button {
+	background-color: #4D7EBB;
+  background: linear-gradient(to bottom, #4D7EBB, #365C96);
+  color: white;
+}
+
+.add-new-project span {
+	color: #2E4B6D;
+}
+
+.todo-list {
+	width: 90vw;
+	max-width: 700px;
+	margin: 25px auto;
+}
+
+.sign-message {
+	text-align: center;
+}

@@ -1,0 +1,33 @@
+.add-task {
+	display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #DFDFDF;
+  background: linear-gradient(to bottom, #DFDFDF, #CCCCCC);
+  border: 1px solid #C6C5B2;
+  padding: 10px;
+}
+
+.glyphicon-plus {
+	font-size: 25px;
+  color: #56906C;
+  text-shadow: 0 1px 0px black;
+  padding: 6px;
+}
+
+.add-task form {
+	margin: 0;
+}
+
+.add-task form input {
+	border-radius: 0;
+}
+
+.add-task>form>div button{
+  width: 15vw;
+  max-width: 125px;
+  min-width: 85px;
+  color: white;
+  background-color: #90C6A8;
+  background: linear-gradient(to bottom, #90C6A8, #518768);
+}

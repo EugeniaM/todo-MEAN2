@@ -1,0 +1,10 @@
+<div class="project">
+	<div>
+		<span class="glyphicon glyphicon-list-alt"></span>
+		<span class="project-title">{{project.title}}</span>
+	</div>
+	<div class="project-options">
+		<span class="glyphicon glyphicon-pencil" (click)="goToEditProjectPage(project)"></span>
+    <span class="glyphicon glyphicon-trash" (click)="removeProject(project)"></span>
+	</div>
+</div>
