@@ -1,0 +1,18 @@
+<div class="new-project-container">
+	<h4>Edit Task for {{project.title}} List</h4>
+	<div class="new-project-form">
+		<form class="add-edit" (ngSubmit)="editTask()">
+		  <div class="input-group">
+		    <input type="text" class="form-control" placeholder="Edit task" [(ngModel)]="taskBody" name="taskBody">
+		    <span class="input-group-btn">
+		      <button class="btn btn-default" type="submit" [class.disabled]="!taskBody">Edit Task</button>
+		    </span>
+		  </div>
+		</form>
+	</div>
+	<div class="cancel-new-project">
+		<div class="cancel-button-area">
+		  <button class="btn btn-default cancel" type="button" (click)="cancel()">Cancel</button>
+		</div>
+	</div>
+</div>

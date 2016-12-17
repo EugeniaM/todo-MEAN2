@@ -1,0 +1,43 @@
+.add-edit{
+  margin-top: 20px;
+  width: 90vw;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h3{
+	text-align: center;
+}
+
+.cancel{
+  width: 115px;
+  color: white;
+  background-color: #90C6A8;
+  background: linear-gradient(to bottom, #90C6A8, #518768);
+  float: right;
+}
+
+.cancel-auth{
+  float: left;
+}
+
+.btn:hover{
+  color: white;
+}
+
+.auth{
+  width: 115px;
+  color: white;
+  background-color: #90C6A8;
+  background: linear-gradient(to bottom, #90C6A8, #518768);
+}
+
+.cancel-btn {
+	margin-top: 10px;
+}
+
+.signup-error {
+	width: 90vw;
+	max-width: 800px;
+	margin: 20px auto;
+}

@@ -1,0 +1,41 @@
+h4 {
+	font-weight: bold;
+	text-align: center;
+	margin-top: 5vh;
+}
+
+.new-project-form {
+	display: flex;
+	justify-content: center;
+}
+
+.new-project-form form {
+	width: 90vw;
+	max-width: 800px;
+}
+
+.cancel-new-project {
+	display: flex;
+	justify-content: center;
+}
+
+.cancel-button-area {
+	display: flex;
+	justify-content: flex-end;
+	width: 90vw;
+	max-width: 800px;
+}
+
+.cancel-button-area .cancel {
+	width: 77px;
+}
+
+.new-project-container button {
+	color: white;
+  background-color: #90C6A8;
+  background: linear-gradient(to bottom, #90C6A8, #518768);
+}
+
+.input-group-btn .disabled{
+	background: lightgrey;
+}

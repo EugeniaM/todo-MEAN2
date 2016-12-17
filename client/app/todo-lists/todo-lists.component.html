@@ -1,0 +1,20 @@
+<div *ngIf="!isLoggedIn()" class="sign-message">
+	<h3>You need to <a routerLink="/signin" routerLinkActive="active">Log In</a> or <a routerLink="/signup" routerLinkActive="active">Sign Up</a> before you can view and add todo lists.</h3>
+</div>
+<div *ngIf="isLoggedIn()">
+	<div *ngFor="let project of projects; let i = index" class="todo-list">
+
+		<project-header [project]="project" [(projects)]="projects"></project-header>
+
+		<add-task-input [project]="project" [index]="i"></add-task-input>	
+
+		<tasks-container [project]="project"></tasks-container>
+	  
+	</div>	
+
+	<div class="add-new-project">
+	  <button type="button" class="btn btn-default btn-lg add-list" (click)="goToAddProject()">
+	    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Add TODO List
+	  </button>
+	</div>
+</div>

@@ -1,0 +1,16 @@
+<div class="add-task">
+  <div class="glyphicon glyphicon-plus"></div>
+  <form (submit)="addNewTask($event, project)">
+    <div class="input-group">
+      <input
+        type="text"
+        class="form-control"
+        placeholder="Start typing here to create a task..."
+        [(ngModel)]="newTask.body[index]"
+        name="newTask"/>
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="submit">Add Task</button>
+      </span>
+    </div>
+  </form>
+</div>

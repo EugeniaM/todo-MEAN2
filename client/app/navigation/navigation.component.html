@@ -1,0 +1,8 @@
+<nav class="navbar navbar-default">
+  <ul class="nav navbar-nav">
+    <li *ngIf="isLoggedIn()"><a routerLink="/" routerLinkActive="active">{{ currentUser() }}</a></li>
+    <li *ngIf="isLoggedIn()"><a routerLink="/" routerLinkActive="active" (click)="logout()">Log Out</a></li>
+    <li *ngIf="!isLoggedIn()"><a routerLink="/signin" routerLinkActive="active">Sign In</a></li>
+    <li *ngIf="!isLoggedIn()"><a routerLink="/signup" routerLinkActive="active">Sign Up</a></li>
+  </ul>
+</nav>
