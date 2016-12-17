@@ -7,7 +7,7 @@ var app = express();
 
 var mongoose = require('mongoose');
 var passport = require('passport');
-mongoose.connect('mongodb://localhost:27017/todos2');
+mongoose.connect('mongodb://heroku_77q6gvb7:jep2th2uruap3ghqf84l7mcjg8@ds135798.mlab.com:35798/heroku_77q6gvb7' || 'mongodb://localhost:27017/todos2');
 require('./models/project.model.js');
 require('./models/task.model.js');
 require('./models/user.model.js');
