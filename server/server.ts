@@ -13,6 +13,7 @@ require('./models/task.model.js');
 require('./models/user.model.js');
 require('./config/passport')(passport);
 
+
 var appRoutes = require('./routes/app');
 
 app.use(bodyParser.json());
