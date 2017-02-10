@@ -117,7 +117,6 @@ router.delete('/projects/:project/tasks/:task', function(req, res, next) {
 	var priorityDelete = req.task.priority;
 
 	Task.find({priority: {$gt: priorityDelete}, project: req.project._id}, function(err, cursor) {
-		console.log("Cursor ===> ", cursor);
 		if(err) return next(err);
 		cursor.forEach(function(task) {
 			if(!task) return next(new Error("can\'t find a task"));
@@ -134,8 +133,6 @@ router.delete('/projects/:project/tasks/:task', function(req, res, next) {
 		if(err) return next(err);
 		if(!project) return next(new Error("can\'t find a project"));
 
-		console.log("Project ===> ", project);
-
 		var index = project[0].tasks.indexOf(req.task._id);
 		project[0].tasks.splice(index, 1);
 		project[0].save(function(err, project) {
@@ -146,7 +143,6 @@ router.delete('/projects/:project/tasks/:task', function(req, res, next) {
 	Task.findOneAndRemove({_id: req.task._id}, function(err, task) {
 		if(err) return next(err);
 
-		console.log(task);
 		res.json(task);
 	});
 });

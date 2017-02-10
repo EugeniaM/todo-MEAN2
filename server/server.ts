@@ -44,27 +44,6 @@ db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function() {
   console.log('Connected to MongoDB');
 
-  // APIs
-  // select all
-  // app.get('/test', function(req, res) {
-  //   Cat.find({}, function(err, docs) {
-  //     if(err) return console.error(err);
-  //     res.json(docs);
-  //   });
-  // });
-
-// var renderIndex = (req: express.Request, res: express.Response) => {
-//     res.sendFile(path.resolve(__dirname, 'index.html'));
-// }
-
-// app.get('/*', renderIndex);
-
-// app.post('/projects', function(req, res, next) {
-// 	res.send(req.body);
-// })
-
-
-
 var server = app.listen(port, function() {
     var host = server.address().address;
     var port = server.address().port;
