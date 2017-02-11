@@ -12,6 +12,7 @@ import 'rxjs/add/operator/toPromise';
 export class AppComponent {
 
 	title = "SIMPLE TODO LISTS";
+	subtitle = "FROM RUBY GARAGE";
 	private url = "/test";
 
 	constructor(private http: Http) { }
