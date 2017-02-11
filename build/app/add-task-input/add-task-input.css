@@ -6,6 +6,7 @@
   background: linear-gradient(to bottom, #DFDFDF, #CCCCCC);
   border: 1px solid #C6C5B2;
   padding: 10px;
+  width: 100%;
 }
 
 .glyphicon-plus {
@@ -13,10 +14,14 @@
   color: #56906C;
   text-shadow: 0 1px 0px black;
   padding: 6px;
+  width: 73%;
+  max-width: 37px;
 }
 
 .add-task form {
 	margin: 0;
+  width: 100%;
+  max-width: 641px;
 }
 
 .add-task form input {
